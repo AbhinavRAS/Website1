@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enter About page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="2.html">About</a>
+            <a href="1.html">Login</a>
+            <a href="4.html">Contact</a>
+        </nav>
+    </header>
+    <div>
+        <video autoplay muted loop id="video-background">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        <h1>Welcome to Redirect Page</h1>
+        <p>This is a paragraph of text.</p>
+    </div>
+</body>
+</html>
